@@ -1,0 +1,37 @@
+{
+  "schema": "phi.capability-catalog",
+  "version": 1,
+  "provider": "APIPhi",
+  "policy": {
+    "discoveryOnly": true,
+    "credentialsInBrowser": false,
+    "approvalRequiredBeforeRuntimeUse": true
+  },
+  "capabilities": [
+    {
+      "id": "ebay-browse",
+      "category": "marketplace",
+      "provides": ["product-search", "item-details"],
+      "auth": "oauth2",
+      "status": "candidate",
+      "adapter": null
+    },
+    {
+      "id": "stock-market-data",
+      "category": "finance",
+      "provides": ["stock-quotes", "historical-time-series"],
+      "auth": "api-key",
+      "status": "candidate",
+      "adapter": null
+    },
+    {
+      "id": "metals-prices",
+      "category": "commodities",
+      "provides": ["metals-prices", "historical-rates"],
+      "auth": "api-key",
+      "status": "candidate",
+      "adapter": null
+    }
+  ],
+  "consumers": ["LayaPhi", "Code Phi", "Quant-AI"]
+}
