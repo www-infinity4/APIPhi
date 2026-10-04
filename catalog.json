@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ebay-browse",
+    "name": "eBay Browse API",
+    "category": "Marketplace",
+    "provider": "eBay",
+    "description": "Search marketplace items and retrieve item details.",
+    "docsUrl": "https://developer.ebay.com/api-docs/buy/browse/overview.html",
+    "auth": "OAuth 2.0",
+    "tags": ["shopping", "products", "marketplace"]
+  },
+  {
+    "id": "stock-market-data",
+    "name": "Stock Market Data",
+    "category": "Finance",
+    "provider": "Alpha Vantage",
+    "description": "Look up stock quotes and historical market time series.",
+    "docsUrl": "https://www.alphavantage.co/documentation/",
+    "auth": "API key",
+    "tags": ["stocks", "quotes", "time series", "finance"]
+  },
+  {
+    "id": "metals-prices",
+    "name": "Metals Prices API",
+    "category": "Commodities",
+    "provider": "Metals-API",
+    "description": "Retrieve precious metals prices and historical rates.",
+    "docsUrl": "https://metals-api.com/documentation",
+    "auth": "API key",
+    "tags": ["metals", "gold", "silver", "commodities"]
+  }
+]

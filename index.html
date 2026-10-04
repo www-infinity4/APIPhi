@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Search the API catalog for Phi Studio and Create Phi.">
+    <title>APIPhi API Catalog</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: system-ui, sans-serif;
+        color: #172033;
+        background: #f5f7fb;
+      }
+
+      body {
+        max-width: 52rem;
+        margin: 0 auto;
+        padding: 3rem 1.25rem;
+      }
+
+      h1 {
+        margin-bottom: 0.4rem;
+      }
+
+      .intro,
+      #result-count {
+        color: #536078;
+      }
+
+      label {
+        display: block;
+        margin-top: 2rem;
+        font-weight: 600;
+      }
+
+      input {
+        box-sizing: border-box;
+        width: 100%;
+        margin-top: 0.5rem;
+        padding: 0.8rem;
+        border: 1px solid #aeb8ca;
+        border-radius: 0.5rem;
+        font: inherit;
+      }
+
+      #results {
+        display: grid;
+        gap: 1rem;
+        margin: 1rem 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .card {
+        padding: 1rem;
+        border: 1px solid #d9dfeb;
+        border-radius: 0.65rem;
+        background: white;
+      }
+
+      .card h2 {
+        margin: 0;
+        font-size: 1.15rem;
+      }
+
+      .card p {
+        margin: 0.5rem 0;
+      }
+
+      .details {
+        color: #536078;
+        font-size: 0.9rem;
+      }
+
+      a {
+        color: #174ea6;
+      }
+    </style>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>APIPhi API Catalog</h1>
+      <p class="intro">Find APIs to use in Phi Studio and Create Phi creations.</p>
+      <label for="search">Quick search</label>
+      <input id="search" type="search" placeholder="Search APIs, providers, or topics" autocomplete="off">
+      <p id="result-count" aria-live="polite">Loading catalog…</p>
+      <ul id="results" aria-label="API catalog results"></ul>
+    </main>
+  </body>
+</html>
