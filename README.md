@@ -14,9 +14,9 @@ Open `http://localhost:8000`. The page loads `catalog.json` from the same origin
 
 ## Catalog and search
 
-`catalog.json` is the shared source of truth. Each entry has an `id`, `name`, `category`, `provider`, `description`, `docsUrl`, `auth`, and `tags`. Add or update entries there; the quick search matches names, providers, categories, descriptions, and tags. The initial entries cover eBay Browse, stock-market data, and metals pricing.
+`catalog.json` is the shared source of truth. Each entry has an `id`, `name`, `category`, `provider`, `description`, `docsUrl`, `auth`, and `tags`. Add or update entries there; the quick search matches names, providers, categories, descriptions, and tags. The catalog is now seeded with the free/no-key sources already used across Phi projects: Metal Sentinel live metals widgets, Internet Archive, MediaWiki/Wikipedia, Crossref, DuckDuckGo Instant Answer, GitHub public REST reads, and the existing Orange Brook SearXNG backend.
 
-The catalog describes APIs; it does not call them or store credentials. Add provider-specific integration code in the consuming Phi Studio tool, and keep API keys in that environment's secret store.
+The catalog describes reusable sources and their access requirements. The default Phi catalog is intentionally limited to sources that are free to use in the current project path and do not require the user to purchase API access. Sources marked no-key can be called directly where browser/CORS rules allow; the existing Orange Brook backend remains the preferred bridge for search and inspection.
 
 ## Phi Studio / Create Phi integration
 
