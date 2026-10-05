@@ -1,32 +1,139 @@
 [
   {
-    "id": "ebay-browse",
-    "name": "eBay Browse API",
-    "category": "Marketplace",
-    "provider": "eBay",
-    "description": "Search marketplace items and retrieve item details.",
-    "docsUrl": "https://developer.ebay.com/api-docs/buy/browse/overview.html",
-    "auth": "OAuth 2.0",
-    "tags": ["shopping", "products", "marketplace"]
-  },
-  {
-    "id": "stock-market-data",
-    "name": "Stock Market Data",
-    "category": "Finance",
-    "provider": "Alpha Vantage",
-    "description": "Look up stock quotes and historical market time series.",
-    "docsUrl": "https://www.alphavantage.co/documentation/",
-    "auth": "API key",
-    "tags": ["stocks", "quotes", "time series", "finance"]
-  },
-  {
-    "id": "metals-prices",
-    "name": "Metals Prices API",
+    "id": "metal-sentinel-widgets",
+    "name": "Metal Sentinel live metal widgets",
     "category": "Commodities",
-    "provider": "Metals-API",
-    "description": "Retrieve precious metals prices and historical rates.",
-    "docsUrl": "https://metals-api.com/documentation",
-    "auth": "API key",
-    "tags": ["metals", "gold", "silver", "commodities"]
+    "provider": "Metal Sentinel",
+    "description": "Official embeddable live widgets for gold, silver, platinum, palladium, copper, nickel, aluminum, zinc, and lead in USD. Already used by Alien/Infinity Radio.",
+    "docsUrl": "https://metal-sentinel.com/widgets",
+    "auth": "None",
+    "cost": "Free",
+    "access": "No key / no signup",
+    "tags": [
+      "metals",
+      "gold",
+      "silver",
+      "platinum",
+      "palladium",
+      "copper",
+      "nickel",
+      "aluminum",
+      "zinc",
+      "lead",
+      "commodities",
+      "prices"
+    ]
+  },
+  {
+    "id": "internet-archive",
+    "name": "Internet Archive APIs",
+    "category": "Media",
+    "provider": "Internet Archive",
+    "description": "Search and retrieve public audio, video, books, metadata, and playable media used throughout the Phi media flows.",
+    "docsUrl": "https://archive.org/developers/",
+    "auth": "None",
+    "cost": "Free",
+    "access": "No key",
+    "tags": [
+      "audio",
+      "video",
+      "movies",
+      "books",
+      "archive",
+      "media",
+      "search"
+    ]
+  },
+  {
+    "id": "mediawiki",
+    "name": "MediaWiki / Wikipedia API",
+    "category": "Knowledge",
+    "provider": "Wikimedia",
+    "description": "Public search, page extracts, summaries, images, and structured encyclopedia retrieval used by Infinity and Omni fallbacks.",
+    "docsUrl": "https://www.mediawiki.org/wiki/API:Main_page",
+    "auth": "None",
+    "cost": "Free",
+    "access": "No key",
+    "tags": [
+      "wikipedia",
+      "knowledge",
+      "research",
+      "images",
+      "articles",
+      "search"
+    ]
+  },
+  {
+    "id": "crossref",
+    "name": "Crossref REST API",
+    "category": "Research",
+    "provider": "Crossref",
+    "description": "Public scholarly metadata and DOI research lookup used by the Phi research/news stack.",
+    "docsUrl": "https://api.crossref.org/",
+    "auth": "None",
+    "cost": "Free",
+    "access": "No key",
+    "tags": [
+      "research",
+      "papers",
+      "doi",
+      "citations",
+      "academic",
+      "articles"
+    ]
+  },
+  {
+    "id": "duckduckgo-instant-answer",
+    "name": "DuckDuckGo Instant Answer API",
+    "category": "Search",
+    "provider": "DuckDuckGo",
+    "description": "Public instant-answer retrieval used by earlier Infinity research flows as a lightweight no-key source.",
+    "docsUrl": "https://api.duckduckgo.com/",
+    "auth": "None",
+    "cost": "Free",
+    "access": "No key",
+    "tags": [
+      "search",
+      "web",
+      "answers",
+      "research"
+    ]
+  },
+  {
+    "id": "github-public",
+    "name": "GitHub public REST API",
+    "category": "Development",
+    "provider": "GitHub",
+    "description": "Public repository and commit data for public repos; already used in Phi commit/status panels without a paid API.",
+    "docsUrl": "https://docs.github.com/en/rest",
+    "auth": "None for public read endpoints",
+    "cost": "Free",
+    "access": "No key for public reads; rate limits apply",
+    "tags": [
+      "github",
+      "code",
+      "repositories",
+      "commits",
+      "development"
+    ]
+  },
+  {
+    "id": "orange-brook-search",
+    "name": "Orange Brook SearXNG",
+    "category": "Search",
+    "provider": "Infinity / SearXNG",
+    "description": "The existing Phi search backend for web and image retrieval, including Code Phi plan and Cloud Browser inspection routes.",
+    "docsUrl": "https://github.com/www-infinity4/searxng",
+    "auth": "None from Phi front ends",
+    "cost": "Existing infrastructure",
+    "access": "Already connected",
+    "tags": [
+      "search",
+      "images",
+      "web",
+      "code phi",
+      "browser",
+      "research"
+    ]
   }
 ]
