@@ -24,7 +24,12 @@
       "lead",
       "commodities",
       "prices"
-    ]
+    ],
+    "verification": {
+      "verified": "existing-project-use",
+      "limits": "Free embeddable widgets; not a JSON API",
+      "source": "metal-sentinel.com"
+    }
   },
   {
     "id": "internet-archive",
@@ -46,7 +51,12 @@
       "archive",
       "media",
       "search"
-    ]
+    ],
+    "verification": {
+      "verified": "existing-project-use",
+      "limits": "Public archive/search source already used in Phi projects",
+      "source": "archive.org"
+    }
   },
   {
     "id": "mediawiki",
@@ -67,7 +77,12 @@
       "images",
       "articles",
       "search"
-    ]
+    ],
+    "verification": {
+      "verified": "existing-project-use",
+      "limits": "Public MediaWiki endpoint already used by Phi projects",
+      "source": "wikipedia.org"
+    }
   },
   {
     "id": "crossref-public",
@@ -88,7 +103,12 @@
       "citations",
       "academic",
       "articles"
-    ]
+    ],
+    "verification": {
+      "verified": "official-docs",
+      "limits": "Public pool; no signup; polite identification optional",
+      "source": "crossref.org"
+    }
   },
   {
     "id": "library-of-congress",
@@ -110,7 +130,12 @@
       "newspapers",
       "culture",
       "research"
-    ]
+    ],
+    "verification": {
+      "verified": "official-docs",
+      "limits": "No key/auth; public rate limits apply",
+      "source": "loc.gov"
+    }
   },
   {
     "id": "nws-weather",
@@ -131,7 +156,12 @@
       "temperature",
       "storms",
       "observations"
-    ]
+    ],
+    "verification": {
+      "verified": "official-docs",
+      "limits": "Free; reasonable rate limits; User-Agent required",
+      "source": "weather.gov"
+    }
   },
   {
     "id": "usgs-earthquakes",
@@ -152,7 +182,12 @@
       "map",
       "hazards",
       "science"
-    ]
+    ],
+    "verification": {
+      "verified": "public-government-source",
+      "limits": "Public USGS data endpoint",
+      "source": "usgs.gov"
+    }
   },
   {
     "id": "bls-v1",
@@ -174,7 +209,12 @@
       "wages",
       "economics",
       "labor"
-    ]
+    ],
+    "verification": {
+      "verified": "official-docs",
+      "limits": "Unregistered v1: 25 queries/day, 25 series/query, 10 years/query",
+      "source": "bls.gov"
+    }
   },
   {
     "id": "duckduckgo-instant-answer",
@@ -192,7 +232,10 @@
       "search",
       "answers",
       "research"
-    ]
+    ],
+    "verification": {
+      "verified": "pending-review"
+    }
   },
   {
     "id": "github-public",
@@ -212,7 +255,12 @@
       "repositories",
       "commits",
       "development"
-    ]
+    ],
+    "verification": {
+      "verified": "official-docs",
+      "limits": "Unauthenticated public reads: 60 requests/hour per IP",
+      "source": "docs.github.com"
+    }
   },
   {
     "id": "orange-brook-search",
@@ -233,6 +281,11 @@
       "code phi",
       "browser",
       "research"
-    ]
+    ],
+    "verification": {
+      "verified": "owned-existing-infrastructure",
+      "limits": "Existing Phi SearXNG/Browser backend",
+      "source": "Infinity"
+    }
   }
 ]
