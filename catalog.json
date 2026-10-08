@@ -316,5 +316,55 @@
       "limits": "Browser CORS varies by source; creator licensing and feed availability must be checked. No paid API or OAuth.",
       "source": "RSS 2.0 and public podcast feeds"
     }
+  },
+  {
+    "id": "youtube-privacy-embed",
+    "name": "YouTube privacy-enhanced video and playlist embeds",
+    "category": "Video & Media",
+    "provider": "YouTube",
+    "description": "Use video/playlist IDs from verified search selections, creator-provided URLs or publicly indexed sources. Official player loads only when clicked. Does not provide unauthenticated search of all YouTube videos.",
+    "endpoint": "https://www.youtube-nocookie.com/embed/",
+    "auth": "None for known public video IDs",
+    "cost": "Free official embed",
+    "requiresSignup": false,
+    "requiresPayment": false,
+    "requiresCard": false,
+    "tags": [
+      "video",
+      "youtube",
+      "playlist",
+      "embed",
+      "player",
+      "widgetphi",
+      "creator"
+    ],
+    "verification": {
+      "verified": "official-docs",
+      "source": "https://support.google.com/youtube/answer/171780",
+      "limits": "Creator can disable embedding and age/region restrictions apply; YouTube search API needs authenticated access."
+    }
+  },
+  {
+    "id": "vimeo-public-embed",
+    "name": "Vimeo public video embed",
+    "category": "Video & Media",
+    "provider": "Vimeo",
+    "description": "Render authorized embeddable Vimeo video URLs as a standard in-page provider player, never extracting or copying raw media.",
+    "endpoint": "https://player.vimeo.com/video/",
+    "auth": "None for public embeds",
+    "cost": "Free public player",
+    "requiresSignup": false,
+    "requiresPayment": false,
+    "requiresCard": false,
+    "tags": [
+      "vimeo",
+      "video",
+      "embed",
+      "player"
+    ],
+    "verification": {
+      "verified": "provider-iframe",
+      "limits": "Embeddability is controlled by video owner."
+    }
   }
 ]
