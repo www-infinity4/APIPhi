@@ -287,5 +287,34 @@
       "limits": "Existing Phi SearXNG/Browser backend",
       "source": "Infinity"
     }
+  },
+  {
+    "id": "podcast-rss",
+    "name": "Podcast RSS 2.0 / Enclosure Metadata",
+    "category": "Audio & Podcasts",
+    "provider": "Creator-hosted RSS feeds",
+    "description": "Read public podcast RSS XML and titles, descriptions, optional artwork and enclosure links. Do not claim that public availability grants commercial embedding or redistribution rights. X/Facebook/Spotify pages are discovery links unless their official players support embeds.",
+    "endpoint": "Creator-supplied public HTTPS RSS URL",
+    "auth": "None",
+    "cost": "Free public feed reads",
+    "requiresSignup": false,
+    "requiresPayment": false,
+    "requiresCard": false,
+    "tags": [
+      "podcast",
+      "episode",
+      "audio",
+      "rss",
+      "feed",
+      "xml",
+      "creator",
+      "yellow card",
+      "widgetphi"
+    ],
+    "verification": {
+      "verified": "protocol-spec",
+      "limits": "Browser CORS varies by source; creator licensing and feed availability must be checked. No paid API or OAuth.",
+      "source": "RSS 2.0 and public podcast feeds"
+    }
   }
 ]
